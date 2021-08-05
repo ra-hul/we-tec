@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>
+        Order
+    </title>
+    <script type="text/javascript" src="../Js/orderScript.js"></script>
+    <link rel="stylesheet" type="text/css" href="../Css/styles.css">
+</head>
+<body background="../Asset/bg.jpg">
+        <div class="main" id="home">
+            <br />
+            <h3 align="center">
+                <font face="sans" size="4">
+                    <a href="home.html">BACK</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="../index.html">HOME</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="../Controller/logout.php">LOGOUT</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                </font>
+            </h3>
+            <br><br><br>
+            <form method="post" action="../Controller/orderstockcheck.php" onsubmit="return orderCheckValidation()">
+        <fieldset>
+            <legend> <h3> Order Stock </h3> </legend>
+            <table>
+                <tr>
+                    <td>Product Name:</td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="name" id="name" value=""> </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <span id="n" class="user-error"></span><hr>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Quantity:</td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" name="quantity" id="quantity" value="">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <span id="q" class="user-error"></span><hr>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Owner Email:</td>
+                </tr>
+                <tr>
+                    <td><input type="email" name="email" id="email" value=""> </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <span id="e" class="user-error"></span><hr>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Payment Amount:</td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" name="payment" id="payment" value="">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <span id="p" class="user-error"></span><hr>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="check"> Authorized by Admin
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <hr>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" name="submit" value="submit"> 
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</div>
+</body>
+</html>

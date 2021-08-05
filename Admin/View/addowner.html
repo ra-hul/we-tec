@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>
+        Add Owner
+    </title>
+     <script type="text/javascript" src="../Js/addownerScript.js"></script>
+    <link rel="stylesheet" type="text/css" href="../Css/styles.css">
+</head>
+<body background="../Asset/bg.jpg">
+        <div>
+            <br/>
+            <h3 align="center">
+                <font face="sans" size="4">
+                    <a href="home.html">BACK</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="../index.html">HOME</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="../Controller/logout.php">LOGOUT</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                </font>
+            </h3>
+            <br><br><br>
+            <form method="post" action="../Controller/regcheck2.php" onsubmit="return ownerCheckValidation()">
+        <fieldset>
+            <legend>Registration</legend>
+            <table>
+                <tr>
+                    <td>Username</td>
+                    <td><input type="text" name="username" id="username" value=""> </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <span id="un" class="user-error"></span><hr>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td><input type="password" name="password" id="password" value=""> </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <span id="p" class="user-error"></span><hr>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Confirm Password</td>
+                    <td><input type="password" name="repass" id="repass" value=""> </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <span id="cp" class="user-error"></span><hr>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td><input type="email" name="email" id="email" value=""> </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <span id="e" class="user-error"></span><hr>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" name="signup" value="Submit"> 
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Add Order</title>
+</head>
+<body>
+	<div align="center">
+
+	<form method="post" action="../controller/orderCheck.php" onsubmit="return validateform()">
+		<script type="text/javascript" src="order.js"></script>
+
+
+		
+		<fieldset>
+			<legend> <h3> ADD Order</h3> </legend>
+			<table>
+				<tr>
+					<td>Customer ID</td>
+				</tr>
+				<tr>
+					<td><input type="text" name="name" id="name" value="" onblur="NameValidation()"> </td>
+					<span id="nname" >  <span>
+
+				</tr>
+				<tr>
+					<td>Value</td>
+				</tr>
+				<tr>
+					<td><input type="text" name="buyingPrice" id="bPrice" value="" onblur="BuyingValidation()"> </td>
+                    <tr>
+                        <td>Ship Method</td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="ship" id="bPrice" value="" onblur="MethodValidation()"> </td>
+					<span id="ship" >  <span>
+
+				</tr>
+
+                <tr>
+                    <td>Ship Address</td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="sadd" id="bPrice" value="" onblur="AddValidation()"> </td>
+                <span id="BPrice" >  <span>
+
+            </tr>
+				<!--<tr>
+					<td>Selling Price</td>
+				</tr>
+				<tr>
+					<td><input type="text" name="sellingPrice" value=""> </td>
+				</tr>
+				<tr>
+					<td>
+						<hr>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="checkbox" name="check"> Display
+					</td>
+				</tr>-->
+				<tr>
+					<td>
+						<hr>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="submit" name="save" value="Save"> 
+					</td>
+				</tr>
+			</table>
+		</fieldset>
+
+	</form>
+</div>
+</body>
+</html>

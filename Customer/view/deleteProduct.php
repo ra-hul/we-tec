@@ -1,0 +1,24 @@
+<?php
+	session_start();
+	#require_once('../model/dbConnection.php');
+	require_once('../model/webtech.php');
+
+	require_once('../model/productModel.php');
+	$id = $_GET['id'];
+	$connection = getConnection();
+	$selectedProduct = getProductById($id);
+	$_SESSION['id'] = $id;
+?>
+
+<div id="main_content">
+	<form method="POST" action="../controller/deleteCheck.php">
+		<fieldset style="width: 20%">
+			<legend>DELETE PRODUCT</legend>
+			Name: <?php echo $selectedProduct['Name']; ?> <br>
+			Buying Price: <?php echo $selectedProduct['Price']; ?> <br>
+			Displayable: <?php  if($selectedProduct['Display'] == 'Yes') { echo "Yes";} else { echo "No";} ?>
+			<hr>
+			<input type="submit" name="delete" value="Delete">
+		</fieldset>
+	</form>
+</div>

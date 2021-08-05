@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>
+        Consult
+    </title>
+    <script type="text/javascript" src="../Js/expenseScript.js"></script>
+    <link rel="stylesheet" type="text/css" href="../Css/styles.css">
+</head>
+<body background="../Asset/bg.jpg">
+        <div class="main" id="home">
+            <br />
+            <h3 align="center">
+                <font face="sans" size="4">
+                    <a href="expense.php">BACK</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="home.html">HOME</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="../Controller/logout.php">LOGOUT</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                </font>
+            </h3>
+            <br><br><br>
+	<form method="post" action="../Controller/addCheck.php" onsubmit="return expenseCheckValidation()">
+		<fieldset>
+			<legend> <h3> ADD EXPENSE and INCOME </h3> </legend>
+			<table>
+				<tr>
+					<td>Month</td>
+				</tr>
+				<tr>
+					<td><input type="text" name="name" id="name" value=""> </td>
+				</tr>
+				<tr>
+                    <td colspan="2">
+                        <span id="n" class="user-error"></span><hr>
+                    </td>
+                </tr>
+				<tr>
+					<td>Expense</td>
+				</tr>
+				<tr>
+					<td><input type="text" name="buyingPrice" id="buyingPrice" value=""> </td>
+				</tr>
+				<tr>
+                    <td colspan="2">
+                        <span id="e" class="user-error"></span><hr>
+                    </td>
+                </tr>
+				<tr>
+					<td>Income</td>
+				</tr>
+				<tr>
+					<td><input type="text" name="sellingPrice" id="sellingPrice" value=""> </td>
+				</tr>
+				<tr>
+                    <td colspan="2">
+                        <span id="s" class="user-error"></span><hr>
+                    </td>
+                </tr>
+				<tr>
+					<td>
+						<hr>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="checkbox" name="check"> Authorized By Admin
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<hr>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="submit" name="save" value="Save"> 
+					</td>
+				</tr>
+			</table>
+		</fieldset>
+	</form>
+</body>
+</html>

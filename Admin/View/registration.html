@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Reg</title>
+     <script type="text/javascript" src="../Js/registrationScript.js"></script>
+    <link rel="stylesheet" type="text/css" href="../Css/styles.css">
+</head>
+
+<body background="../Asset/bg.jpg">
+        <div>
+            <br />
+            <h3 align="center">
+                <font face="sans" size="4">
+                    <a href="../index.html">HOME</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="login.php">LOGIN</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="registration.html">REGISTRATION</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                </font>
+            </h3>
+        </div>
+        <tr>
+            <td>
+                <form method="post" action="../Controller/Public_reg_validation.php" 
+                onsubmit="return regCheckValidation()">
+                <fieldset>
+                    <legend><b>Registration</b></legend>
+                        <table>
+                            <tr>
+                                <td> Name:</td>
+                                <td>
+                                    <input type="text" name="name" id="name" value="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <span id="n" class="user-error"></span><hr>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Email:</td>
+                                <td><input type="email" name="email" id="email" value=""></td>
+
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <span id="e" class="user-error"></span><hr>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>User Name:</td>
+                                <td><input type="text" name="username" id="username" value=""></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <span id="un" class="user-error"></span><hr>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Password:</td>
+                                <td><input type="password" name="password" id="password" value=""></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <span id="p" class="user-error"></span><hr>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Confirm Password:</td>
+                                <td><input type="password" name="confirm_password" id="confirm_password" value=""></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <span id="cp" class="user-error"></span><hr>
+                                </td>
+                            </tr>
+                            <tr align="left">
+                                <td colspan="2" align="left">
+                                <input type="submit" name="submit" value="submit"><br><br>
+                                </td>
+                            </tr>
+                </table>
+            </fieldset>
+            </form>
+    </td>
+    </tr>
+
+</body>
+
+</html>
